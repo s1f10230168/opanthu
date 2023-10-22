@@ -8,110 +8,206 @@
   padding: 0 0.5rem;
 }
 
-.main {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem 0;
+.basepoint {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-top: -165px;
+  background: #f00;
 }
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
+.face {
+  position: absolute;
+  top: 80px;
+  left: -163px;
+  box-sizing: border-box;
+  width: 326px;
+  height: 250px;
+  background: #fcb3cc;
+  border: 5px solid #1d1220;
+  border-radius: 50%;
 }
 
-.footer > a {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
+.earR {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100px;
+  height: 200px;
+  background: #fcb3cc;
+  border: 5px solid #1d1220;
+  border-radius: 50%;
 }
 
-.title {
-  margin: 0;
-  font-size: 4rem;
-  line-height: 1.15;
-  text-align: center;
+.earL {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 200px;
+  background: #fcb3cc;
+  border: 5px solid #1d1220;
+  border-radius: 50%;
 }
 
-.title > a {
-  color: #0070f3;
-  text-decoration: none;
+.earpanel {
+  position: absolute;
+  top: 80px;
+  left: -93px;
+  box-sizing: border-box;
+  width: 187px;
+  height: 32px;
+  background: #fcb3cc;
 }
 
-.title > a:hover,
-.title > a:focus,
-.title > a:active {
-  text-decoration: underline;
+.ribbonR {
+  position: absolute;
+  top: 70px;
+  left: 2px;
+  width: 60px;
+  height: 60px;
+  line-height: 10px;
+  background-color: rgb(85 241 249);
+  border: 5px solid #1d1220;
+  border-radius: 50%;
 }
 
-.description {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  text-align: center;
+.ribbonL {
+  position: absolute;
+  top: 70px;
+  left: -60px;
+  width: 60px;
+  height: 60px;
+  line-height: 10px;
+  background-color: rgb(85 241 249);
+  border: 5px solid #1d1220;
+  border-radius: 50%;
 }
 
-.code {
-  padding: 0.75rem;
-  font-family: Menlo, 'Monaco, Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono',
-    'Bitstream Vera Sans Mono', 'Courier New', monospace;
-  font-size: 1.1rem;
-  border-radius: 5px;
+.ribbonS {
+  position: absolute;
+  top: 80px;
+  left: -18px;
+  width: 40px;
+  height: 40px;
+  line-height: 10px;
+  background-color: rgb(85 241 249);
+  border: 5px solid #1d1220;
+  border-radius: 50%;
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width: 800px;
-  margin-top: 3rem;
+.eyeL {
+  position: absolute;
+  top: 165px;
+  left: -65px;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  background: #060103;
+  border-radius: 50%;
 }
 
-@media (width <= 600px) {
-  .grid {
-    flex-direction: column;
-    width: 100%;
-  }
+.eyeR {
+  position: absolute;
+  top: 165px;
+  left: 50px;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  background: #060103;
+  border-radius: 50%;
 }
 
-.card {
-  width: 45%;
-  padding: 1.5rem;
-  margin: 1rem;
-  color: inherit;
-  text-align: left;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+.mouthS {
+  position: absolute;
+  top: 205px;
+  left: -30px;
+  box-sizing: border-box;
+  width: 60px;
+  height: 80px;
+  background: #fcb3cc;
+  border: 5px solid #1d1220;
+  border-radius: 50%;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.mouthSpanel {
+  position: absolute;
+  top: 215px;
+  left: -60px;
+  box-sizing: border-box;
+  width: 90px;
+  height: 55px;
+  background: #fcb3cc;
 }
 
-.card > h2 {
-  margin: 0 0 1rem;
-  font-size: 1.5rem;
+.mouthS2 {
+  position: absolute;
+  top: 223px;
+  left: -18px;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  background: #060103;
+  border-radius: 50%;
 }
 
-.card > p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.mouthSpanel2 {
+  position: absolute;
+  top: 212px;
+  left: -18px;
+  box-sizing: border-box;
+  width: 35px;
+  height: 30px;
+  background: #fcb3cc;
+  border-radius: 50%;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.mouthL {
+  position: absolute;
+  top: 210px;
+  left: -50px;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  background: #fcb3cc;
+  border: 5px solid #1d1220;
+  border-radius: 50%;
+}
+
+.mouthSpanel3 {
+  position: absolute;
+  top: 206px;
+  left: -50px;
+  box-sizing: border-box;
+  width: 38px;
+  height: 32px;
+  background: #fcb3cc;
+  border-radius: 50%;
+}
+
+.mouthR {
+  position: absolute;
+  top: 213px;
+  left: 15px;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  background: #fcb3cc;
+  border: 5px solid #1d1220;
+  border-radius: 50%;
+}
+
+.mouthSpanel4 {
+  position: absolute;
+  top: 208px;
+  left: 14px;
+  box-sizing: border-box;
+  width: 38px;
+  height: 32px;
+  background: #fcb3cc;
+  border-radius: 50%;
 }
